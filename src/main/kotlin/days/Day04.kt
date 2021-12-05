@@ -82,11 +82,11 @@ class Day04 : Day {
             return columns.fold(0) { result, current -> result + current.filter { !it.isCalled }.sumOf { it.number } }
         }
     }
-}
 
-data class Field(val number: Int, var isCalled: Boolean = false) {
-    fun call(i: Int) {
-        if (!isCalled)
-            isCalled = number == i
+    data class Field(val number: Int, var isCalled: Boolean = false) {
+        fun call(i: Int) {
+            if (!isCalled)
+                isCalled = number == i
+        }
     }
 }
