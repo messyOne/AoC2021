@@ -10,7 +10,8 @@ fun main() {
         Day06(),
         Day07(),
         Day08(),
-        Day09()
+        Day09(),
+        Day10()
     ).forEach {
         it.printHeader()
         println("Part 1: " + it.executePart1())
